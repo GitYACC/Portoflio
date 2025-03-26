@@ -24,6 +24,7 @@ import {
     Python,
 } from "@/components/native/Languages";
 import DashboardBlob from "@/components/native/DashboardBlob";
+import Image from "next/image";
 
 export default function Home() {
     return (
@@ -34,7 +35,7 @@ export default function Home() {
             <div className="w-full flex flex-col">
                 <div className="relative flex flex-col w-full items-center justify-center gap-8 h-full">
                     <h1 className="z-40 flex items-center gap-8 text-[72px] font-semibold [text-shadow:_0_4px_10px_rgb(31_41_55/40%)] backdrop-blur-sm px-4 select-none">
-                        Hey! I'm a{" "}
+                        Hey! I&apos;m a{" "}
                         <TextLoop interval={2.5} className="fill-gray-800">
                             <C className="size-[72px]" />
                             <CPP className="size-[72px]" />
@@ -145,7 +146,7 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-3 gap-16 h-52 items-center justify-center mt-24 w-[60rem] z-40">
                 <a className="relative rounded-lg overflow-hidden h-full shadow-lg" href="https://github.com/GitYACC/DBA-ESPN" target="_blank">
-                    <img src="/dba-logo.png" alt="dba-logo" className="w-full h-full object-cover"/>
+                    <Image src="/dba-logo.png" alt="dba-logo" width={1000} height={0} className="w-full h-full object-cover"/>
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-800"/>
                     <div className="absolute bottom-0 flex flex-col px-6 py-4">
                         <span className="font-medium text-white">DBA ESPN</span>
@@ -153,7 +154,7 @@ export default function Home() {
                     </div>
                 </a>
                 <a className="relative rounded-lg overflow-hidden h-full shadow-lg" href="https://github.com/kjeelani/ada.ai" target="_blank">
-                    <img src="/ada-lovelace.jpeg" alt="ada-lovelace" className="w-full h-full object-cover"/>
+                    <Image src="/ada-lovelace.jpeg" alt="ada-lovelace" width={1000} height={0} className="w-full h-full object-cover"/>
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-800"/>
                     <div className="absolute bottom-0 flex flex-col px-6 py-4">
                         <span className="font-medium text-white">ADA.ai</span>
@@ -161,7 +162,7 @@ export default function Home() {
                     </div>
                 </a>
                 <a className="relative rounded-lg overflow-hidden h-full shadow-lg" href="https://github.com/GitYACC/Banking-App" target="_blank">
-                    <img src="/bank-saas.png" alt="bank-saas" className="w-full h-full object-cover"/>
+                    <Image src="/bank-saas.png" alt="bank-saas" width={1000} height={0} className="w-full h-full object-cover"/>
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-800"/>
                     <div className="absolute bottom-0 flex flex-col px-6 py-4">
                         <span className="font-medium text-white">Banking SAAS App</span>

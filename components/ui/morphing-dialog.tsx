@@ -176,7 +176,7 @@ function MorphingDialogContent({
     useEffect(() => {
         if (isOpen) {
             document.body.classList.add("overflow-hidden");
-            var focusableElements;
+            let focusableElements;
             if (containerRef.current) {
                 focusableElements = containerRef.current.querySelectorAll(
                     "button, [href], input, select, textarea, [tabindex]:not([tabindex='-1'])"

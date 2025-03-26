@@ -6,6 +6,14 @@ const inter = Inter({
     subsets: ["latin"]
 });
 
+export const metadata: Metadata = {
+    title: "Samarth Shastry Website Portfolio",
+    description: "Website Portfolio",
+    icons: {
+        apple: "/apple-touch-icon.png"
+    }
+} 
+
 export default function RootLayout({
     children,
 }: Readonly<{
